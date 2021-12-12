@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rizwanamjadnov.intentsassignmentmad">
 
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntentsAssignmentMAD">
         <activity
+            android:name=".add_contactActivity"
+            android:exported="false" />
+        <activity
             android:name=".TimerIntentActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,9 +25,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
 </manifest>

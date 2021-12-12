@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Intents Assignment MAD</string>
+    <string name="add_contact_android_backgroundtint">Add Contact android:backgroundTint=</string>
 </resources>
