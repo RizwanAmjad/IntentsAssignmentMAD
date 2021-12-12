@@ -1,7 +1,9 @@
 package com.rizwanamjadnov.intentsassignmentmad
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.widget.Button
 import android.widget.EditText
 
@@ -17,11 +19,21 @@ class add_contactActivity : AppCompatActivity() {
         editPhoneNo =findViewById(R.id.editTextNumber)
         btn_add =findViewById(R.id.button)
         btn_add.setOnClickListener{
-createContact()
+            createContact()
         }
 
     }
     private fun createContact(){
+        var name = editName.text.toString().toInt()
+        var phone_no = editPhoneNo.text.toString().toInt()
+        val intent = Intent(Intent.ACTION_INSERT).apply {
+            type = ContactsContract.Contacts.CONTENT_TYPE
+            putExtra(ContactsContract.Intents.Insert.NAME, name)
+            putExtra(ContactsContract.Intents.Insert.PHONE, phone_no)
+        }
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
+        }
 
     }
 }
