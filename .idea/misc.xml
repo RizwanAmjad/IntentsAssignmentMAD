@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace/Android/IntentsAssignmentMAD/app/src/main/res/layout/activity_alarm_intent.xml" value="0.25" />
         <entry key="..\:/workspace/Android/IntentsAssignmentMAD/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/workspace/Android/IntentsAssignmentMAD/app/src/main/res/layout/activity_timer_intent.xml" value="0.27291666666666664" />
       </map>
