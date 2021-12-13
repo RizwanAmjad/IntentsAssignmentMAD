@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnAlarm:Button
     private lateinit var btnCamera:Button
     private lateinit var button_cont:Button
+    private lateinit var button_map:Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         btnAlarm = findViewById(R.id.btn_menu_alarm)
         btnCamera = findViewById(R.id.btn_menu_camera)
         button_cont=findViewById(R.id.button_contact)
+        button_map=findViewById(R.id.button2)
 
         btnTimer.setOnClickListener {
             val intent = Intent(this, TimerIntentActivity::class.java)
@@ -37,6 +39,11 @@ class MainActivity : AppCompatActivity() {
         }
         button_cont.setOnClickListener {
             val intent = Intent(this, add_contactActivity::class.java)
+            startActivity(intent)
+        }
+
+        button_map.setOnClickListener{
+            val intent =Intent(this, Open_Map::class.java)
             startActivity(intent)
         }
     }
