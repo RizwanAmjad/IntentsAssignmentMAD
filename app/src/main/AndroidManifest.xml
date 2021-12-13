@@ -12,13 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntentsAssignmentMAD">
         <activity
+            android:name=".ViewMessages"
+            android:exported="true" />
+        <activity
             android:name=".SMSActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SENDTO" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Open_Map"
             android:exported="true" />
