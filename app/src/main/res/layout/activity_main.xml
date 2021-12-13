@@ -106,5 +106,32 @@
         app:layout_constraintStart_toEndOf="@+id/button_contact"
         app:layout_constraintTop_toBottomOf="@+id/btn_menu_alarm" />
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rizwan Amjad"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_contact" />
+
+
+    <Button
+        android:id="@+id/smsButton"
+        android:layout_width="90dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Send SMS"
+        android:textAllCaps="false"
+        android:textColor="#F13939"
+        app:cornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:strokeColor="#F13939"
+        app:strokeWidth="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

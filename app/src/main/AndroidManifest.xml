@@ -12,29 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntentsAssignmentMAD">
         <activity
-            android:name=".Open_Map"
-            android:exported="true"
-        />
+            android:name=".SMSActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+            </intent-filter>
+        </activity>
 
+        <activity
+            android:name=".Open_Map"
+            android:exported="true" />
         <activity
             android:name=".AlarmIntentActivity"
-            android:exported="true"
-            />
-
+            android:exported="true" />
         <activity
             android:name=".CameraIntentActivity"
-            android:exported="true"
-            />
-
+            android:exported="true" />
         <activity
             android:name=".add_contactActivity"
             android:exported="false" />
         <activity
             android:name=".TimerIntentActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
